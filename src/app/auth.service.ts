@@ -13,7 +13,7 @@ export class AuthService {
     clientID: 'WOEvNP1093py59R8HLS6VtdPd6MaMfiz',
     domain: 'gemgolfers.auth0.com',
     responseType: 'code',
-    redirectUri: 'http://localhost:4200/callback',
+    redirectUri: 'https://gemgolfers.herokuapp.com/',
     scope: 'openid'
   });
 

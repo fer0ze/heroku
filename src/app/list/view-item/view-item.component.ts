@@ -26,11 +26,11 @@ export class ViewItemComponent implements OnInit {
     })
       .valueChanges
       .subscribe(({ data }) => {
-        if (data.todo_list.length === 0) {
+        if (data.Apollo.length === 0) {
           this.noItemsInList = true;
         } else {
           this.noItemsInList = false;
-          this.todoItems = data.todo_list;
+          this.todoItems = data.Apollo;
         }
       });
   }

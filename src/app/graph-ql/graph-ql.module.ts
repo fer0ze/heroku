@@ -15,10 +15,10 @@ import { stringify } from '@angular/compiler/src/util';
 
 export class GraphQLModule {
   constructor(apollo: Apollo, httpLink: HttpLink) {
-    const uri = 'https://hasura-angular.herokuapp.com/v1alpha1/graphql';
+    const uri = 'https://gemgolfers.herokuapp.com/v1alpha1/graphql';
 
     const authHeader = new HttpHeaders()
-    .set('X-Hasura-Access-Key', 'something_secret')
+    .set('X-Hasura-Access-Key', 'fercjqjjpdcngydvqoze')
     .set('Content-Type', 'application/json')
     .set('Authorization', `Bearer ${localStorage.getItem('access_token')}`)
     .set('X-Hasura-Role', 'user')
